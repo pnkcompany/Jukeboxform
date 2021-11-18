@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png"
+      type="image/x-icon"
+    />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;" />
+    <meta name="fragment" content="!" />
+    <meta name="viewport" content="width=device-width" />
+    <base target="_blank" />
+    <title>ONLINE JUKEBOX</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Roboto:400,700"
+    />
+
+    <link
+      href="/static/forms/client/css/333676753-formview_st_ltr.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        background-color: rgb(231, 238, 247);
+        background-image: url('//ssl.gstatic.com/docs/forms/themes/images/v1/0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ/blue-stripe-bg.png');
+        background-repeat: repeat;
+        background-position: left top;
+      }
+
+      .ss-form-container,
+      .ss-resp-card {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .ss-footer,
+      .ss-response-footer {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .ss-grid-row-odd {
+        background-color: rgb(242, 242, 242);
+      }
+
+      .ss-form-container,
+      .ss-resp-card {
+        border-color: rgb(212, 212, 212);
+      }
+
+      .ss-form-title {
+        text-align: left;
+      }
+
+      .ss-form-title[dir='rtl'] {
+        text-align: right;
+      }
+
+      .ss-form-desc {
+        text-align: left;
+      }
+
+      .ss-form-desc[dir='rtl'] {
+        text-align: right;
+      }
+
+      .ss-header-image-container {
+        height: 0;
+      }
+
+      .ss-item {
+        font-size: 1.08rem;
+      }
+
+      .ss-choices {
+        font-size: 1rem;
+      }
+
+      body {
+        font-family: 'Roboto';
+        color: rgb(119, 119, 119);
+        font-weight: 400;
+        font-size: 1.08rem;
+        font-style: normal;
+      }
+
+      .ss-record-username-message {
+        font-family: 'Roboto';
+        color: rgb(119, 119, 119);
+        font-weight: 400;
+        font-size: 1.08rem;
+        font-style: normal;
+      }
+
+      .ss-form-title {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 400;
+        font-size: 2.46rem;
+        font-style: normal;
+      }
+
+      .ss-confirmation {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 400;
+        font-size: 2.46rem;
+        font-style: normal;
+      }
+
+      .ss-page-title,
+      .ss-section-title {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 400;
+        font-size: 1.845rem;
+        font-style: normal;
+      }
+
+      .ss-form-desc,
+      .ss-page-description,
+      .ss-section-description {
+        font-family: 'Roboto';
+        color: rgb(140, 140, 140);
+        font-weight: 400;
+        font-size: 1.08rem;
+        font-style: normal;
+      }
+
+      .ss-resp-content {
+        font-family: 'Roboto';
+        color: rgb(119, 119, 119);
+        font-weight: 400;
+        font-size: 1.08rem;
+        font-style: normal;
+      }
+
+      .ss-q-title {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 700;
+        font-size: 1.08rem;
+        font-style: normal;
+      }
+
+      .ss-embeddable-object-container .ss-q-title {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 700;
+        font-size: 1.845rem;
+        font-style: normal;
+      }
+
+      .ss-q-help,
+      .ss-q-time-hint {
+        font-family: 'Roboto';
+        color: rgb(140, 140, 140);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+      }
+
+      .ss-choice-label,
+      .video-secondary-text,
+      .ss-gridrow-leftlabel,
+      .ss-gridnumber,
+      .ss-scalenumber,
+      .ss-leftlabel,
+      .ss-rightlabel {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+      }
+
+      .error-message,
+      .required-message,
+      .ss-required-asterisk {
+        font-family: 'Roboto';
+        color: rgb(196, 59, 29);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+      }
+
+      .ss-send-email-receipt {
+        font-family: 'Roboto';
+        color: rgb(80, 80, 80);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+      }
+
+      .ss-password-warning {
+        font-family: 'Arial';
+        color: rgb(119, 119, 119);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: italic;
+      }
+
+      .disclaimer {
+        font-family: 'Arial';
+        color: rgb(119, 119, 119);
+        font-weight: 400;
+        font-size: 0.85rem;
+        font-style: normal;
+      }
+
+      .ss-footer-content {
+        font-family: 'Arial';
+        color: rgb(80, 80, 80);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+      }
+
+      .progress-label {
+        font-family: 'Roboto';
+        color: rgb(140, 140, 140);
+        font-weight: 400;
+        font-size: 1rem;
+        font-style: normal;
+      }
+
+      a:link {
+        color: rgb(0, 0, 238);
+      }
+
+      a:visited {
+        color: rgb(85, 26, 139);
+      }
+
+      a:active {
+        color: rgb(252, 0, 0);
+      }
+
+      input[type='text'],
+      input:not([type]),
+      textarea {
+        font-size: 1rem;
+      }
+
+      .error,
+      .required,
+      .errorbox-bad {
+        border-color: rgb(196, 59, 29);
+      }
+
+      .jfk-progressBar-nonBlocking .progress-bar-thumb {
+        background-color: rgb(140, 140, 140);
+      }
+
+      .ss-logo-image {
+        background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_2_small_dark.png');
+        background-size: 108px 21px;
+        width: 108px;
+        height: 21px;
+      }
+
+      @media screen and (-webkit-device-pixel-ratio: 2) {
+        .ss-logo-image {
+          background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_2_small_dark_2x.png');
+        }
+      }
+    </style>
+
+    <link
+      href="/static/forms/client/css/3145455273-mobile_formview_st_ltr.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen and (max-device-width: 721px)"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/oembed?url=https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform&format=xml"
+    />
+    <meta property="og:title" content="ONLINE JUKEBOX" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Google Docs" />
+    <meta
+      property="og:url"
+      content="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform?usp=embed_facebook"
+    />
+    <meta
+      property="og:image"
+      content="https://lh6.googleusercontent.com/JBwVtJTIrG8yxlEDD5ff8uCk6vJFfy-4oj_afmko_Mi4AhmE-ekmUcRDFEd9DtMkIN8=w1200-h630-p"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:description" content="Select Song" />
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:title" content="ONLINE JUKEBOX" />
+    <meta
+      name="twitter:url"
+      content="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform?usp=embed_twitter"
+    />
+    <meta
+      name="twitter:image"
+      content="https://lh6.googleusercontent.com/JBwVtJTIrG8yxlEDD5ff8uCk6vJFfy-4oj_afmko_Mi4AhmE-ekmUcRDFEd9DtMkIN8=w435-h251-p-b1-c0x00999999"
+    />
+    <meta name="twitter:player:width" content="435" />
+    <meta name="twitter:player:height" content="251" />
+    <meta
+      name="twitter:player"
+      content="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform?embedded=true&usp=embed_twitter"
+    />
+    <meta name="twitter:description" content="Select Song" />
+    <meta name="twitter:site" content="@googledocs" />
+  </head>
+  <body dir="ltr" class="ss-base-body">
+    <div itemscope itemtype="http://schema.org/CreativeWork/FormObject">
+      <meta itemprop="name" content="ONLINE JUKEBOX" />
+      <meta itemprop="description" content="Select Song" />
+
+      <meta
+        itemprop="url"
+        content="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform"
+      />
+      <meta
+        itemprop="embedUrl"
+        content="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform?embedded=true"
+      />
+      <meta
+        itemprop="faviconUrl"
+        content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png"
+      />
+
+      <div class="ss-form-container">
+        <div class="ss-header-image-container">
+          <div class="ss-header-image-image">
+            <div class="ss-header-image-sizer"></div>
+          </div>
+        </div>
+        <div class="ss-top-of-page">
+          <div class="ss-form-heading">
+            <h1 class="ss-form-title" dir="ltr">ONLINE JUKEBOX</h1>
+            <div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">
+              Select Song
+            </div>
+          </div>
+        </div>
+        <div class="ss-form">
+          <form action="/cgi-bin/form_get.py" method="get">
+            <ol role="list" class="ss-question-list" style="padding-left: 0">
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-radio">
+                  <div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1202267698"
+                      ><div class="ss-q-title"></div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div
+                    ></label>
+
+                    <ul class="ss-choices" role="radiogroup" aria-label="  ">
+                      <li class="ss-choice-item">
+                        <label
+                          ><span
+                            class="ss-choice-item-control goog-inline-block"
+                          >
+                            <input
+                              type="radio"
+                              name="Song"
+                              value="Song1"
+                              id="group_247866674_1"
+                              role="radio"
+                              class="ss-q-radio"
+                              aria-label="Song1"
+                          /></span>
+                          <span class="ss-choice-label">Song1</span>
+                        </label>
+                      </li>
+                      <li class="ss-choice-item">
+                        <label
+                          ><span
+                            class="ss-choice-item-control goog-inline-block"
+                          >
+                            <input
+                              type="radio"
+                              name="Song"
+                              value="Song2"
+                              id="group_247866674_2"
+                              role="radio"
+                              class="ss-q-radio"
+                              aria-label="Song2"
+                          /></span>
+                          <span class="ss-choice-label">Song2</span>
+                        </label>
+                      </li>
+                      <li class="ss-choice-item">
+                        <label
+                          ><span
+                            class="ss-choice-item-control goog-inline-block"
+                          >
+                            <input
+                              type="radio"
+                              name="Song"
+                              value="Song3"
+                              id="group_247866674_3"
+                              role="radio"
+                              class="ss-q-radio"
+                              aria-label="Song3"
+                          /></span>
+                          <span class="ss-choice-label">Song3</span>
+                        </label>
+                      </li>
+                      <li class="ss-choice-item">
+                        <label
+                          ><span
+                            class="ss-choice-item-control goog-inline-block"
+                          >
+                            <input
+                              type="radio"
+                              name="Song"
+                              value="Song4"
+                              id="group_247866674_4"
+                              role="radio"
+                              class="ss-q-radio"
+                              aria-label="Song4"
+                          /></span>
+                          <span class="ss-choice-label">Song4</span>
+                        </label>
+                      </li>
+                    </ul>
+                    <div
+                      class="error-message"
+                      id="1202267698_errorMessage"
+                    ></div>
+                    <div class="required-message">
+                      This is a required question
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-text">
+                  <div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_2002739700"
+                      ><div class="ss-q-title">Credit Card NUmber</div>
+                      <div class="ss-q-help ss-secondary-text" dir="auto"></div
+                    ></label>
+
+                    <input
+                      type="number"
+                      name="cc"
+                      value=""
+                      class="ss-q-short"
+                      id="cc"
+                      dir="auto"
+                      aria-label="Credit Card NUmber  "
+                      title=""
+                    />
+                    <div
+                      class="error-message"
+                      id="110060721_errorMessage"
+                    ></div>
+                    <div class="required-message">
+                      This is a required question
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ss-item ss-navigate">
+                <table id="navigation-table">
+                  <tbody>
+                    <tr>
+                      <td
+                        class="ss-form-entry goog-inline-block"
+                        id="navigation-buttons"
+                        dir="ltr"
+                      >
+                        <input
+                          type="submit"
+                          name="submit"
+                          value="Submit"
+                          id="ss-submit"
+                          class="jfk-button jfk-button-action"
+                        />
+                        <div class="ss-password-warning ss-secondary-text">
+                          Never submit passwords through Google Forms.
+                        </div>
+                      </td>
+                      <td id="progress-container">
+                        <div
+                          id="progress-bar"
+                          class="
+                            jfk-progressBar-nonBlocking
+                            progress-bar-horizontal
+                            goog-inline-block
+                          "
+                        ></div>
+                        <div id="progress-label" class="progress-label">
+                          100%: You made it.
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </ol>
+          </form>
+        </div>
+        <div class="ss-footer">
+          <div class="ss-attribution"></div>
+          <div class="ss-legal">
+            <div class="disclaimer-separator"></div>
+            <div class="disclaimer" dir="ltr">
+              <div class="powered-by-logo">
+                <span class="powered-by-text">Powered by</span>
+                <a
+                  href="https://www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms"
+                  ><div class="ss-logo-container ss-logo-css-container">
+                    <div class="ss-logo-image"></div>
+                    <span class="aria-only-help">Google Forms</span>
+                  </div></a
+                >
+              </div>
+              <div class="ss-terms">
+                <span class="disclaimer-msg"
+                  >This content is neither created nor endorsed by Google.</span
+                >
+                <br />
+                <a
+                  href="https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/reportabuse?source=https://docs.google.com/forms/d/1l15GvEU2j8D_iTb1y8TACO9J9iD0wAyhQZp6lOdF0P8/viewform"
+                  >Report Abuse</a
+                >
+                -
+                <a href="http://www.google.com/accounts/TOS"
+                  >Terms of Service</a
+                >
+                -
+                <a href="http://www.google.com/google-d-s/terms.html"
+                  >Additional Terms</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="docs-aria-speakable"
+          class="docs-a11y-ariascreenreader-speakable docs-offscreen"
+          aria-live="assertive"
+          role="region"
+          aria-atomic
+        ></div>
+      </div>
+
+     
+    </div>
+  </body>
+</html>
