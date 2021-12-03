@@ -26,10 +26,8 @@ client = boto3.client(
     aws_secret_access_key="obchaKEkFYv+6uWV8VANwT8nlTiBQklW0LGn9j0D",
     region_name="us-east-2",
 )
-
+print("<!doctype html>")
 print("Content-type:text/html\r\n\r\n")
-print("<!doctype html><html>")
-print("<head>")
 
 
 def is_human(captcha_response):
@@ -47,8 +45,6 @@ if is_human(capdata):
     response = client.describe_table(TableName="jukebox")
     response = client.put_item(TableName="jukebox", Item=newItem)
 
-    print("<title>Hello - Second CGI Program</title>")
-    print("</head>")
     print("<body>")
     print("<h2>SongName: %s <br>CCNumber: %s</h2>" % (song, ccNuumb))
     print("</body>")

